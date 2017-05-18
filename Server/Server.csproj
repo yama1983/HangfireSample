@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.6.12" />
+    <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.4.0" />
+    <PackageReference Include="Topshelf" Version="4.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jobs\Jobs.csproj" />
+  </ItemGroup>
+
+</Project>

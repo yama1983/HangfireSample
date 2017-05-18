@@ -1,19 +1,19 @@
-# HangfireSample
-Hanfrire �̃T���v���\�����[�V�����ł��B
-## �\��
-�f���͈ȉ��̃v���W�F�N�g�\���ɂȂ��Ă��܂��B
+﻿# HangfireSample
+Hanfrire のサンプルソリューションです。
+## 構成
+デモは以下のプロジェクト構成になっています。
 
 - App
-  - Redis �Ƀo�b�`�����̃L���[��o�^���܂��B
+  - Redis にバッチ処理のキューを登録します。
 - Jobs
-  - �o�b�`�����̃N���X�ƃC���^�[�t�F�[�X�ł��B
+  - バッチ処理のクラスとインターフェースです。
 - Server
-  - Hangfire �� �T�[�o�[�ɂȂ�܂��B
-    �L���[�����ƂɁA�o�b�`���������s���܂��B
-    �܂��A�_�b�V���{�[�h��񋟂��܂��B
+  - Hangfire の サーバーになります。
+    キューをもとに、バッチ処理を実行します。
+    また、ダッシュボードを提供します。
 
-## �ˑ�����~�h���E�F�A
+## 依存するミドルウェア
 - Redis
-  - �L���[�Ǘ��Ɏg�p���Ă��܂��B
+  - キュー管理に使用しています。
 
-Redis �ȊO�ɂ��ASQLServer �� MySQL�A PostgreSQL �Ȃǂ�RDB���g�p���邱�Ƃ��ł��܂��B
+Redis 以外にも、SQLServer や MySQL、 PostgreSQL などのRDBを使用することもできます。
